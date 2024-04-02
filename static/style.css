@@ -1,0 +1,50 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 10vh 10vw; /* Uses vh and vw for responsive padding */
+    background-color: #cfcdcd;
+    color: #333;
+    min-height: 80vh; /* Height relative to the viewport height */
+}
+
+.container {
+    width: 30vw; /* Adjust the width to be responsive */
+    max-width: 800px; /* Keeps a maximum width to avoid being overly wide on large screens */
+    background-color: #fff;
+    padding: 5vh; /* Responsive padding */
+    margin: 2vh auto 2vh 5vw; /* Responsive margin */
+    box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.1); /* Shadow size relative to the viewport width */
+    border-radius: 1vw; /* Border radius relative to the viewport width */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+h1 {
+    color: #444;
+    margin: 0 0 2vh 0; /* Margin below the heading relative to the viewport height */
+    font-size: 2.5vw; /* Font size responsive to the viewport width */
+}
+
+p {
+    line-height: 1.6;
+    margin: 0 0 2vh 0; /* Responsive bottom margin */
+    font-size: 1.5vw; /* Responsive font size */
+}
+
+.links a {
+    display: block; /* This makes each link occupy its own line */
+    color: #606060;
+    text-decoration: none;
+    margin-right: 1.5vw; /* May not be necessary anymore, depending on your layout */
+    margin-bottom: 1vh; /* Adds some space between the links */
+    padding: 1vh 1vw;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 0.5vw;
+}
+
+.links a:hover, .links a:focus {
+    background-color: #606060;
+    color: #ffffff;
+    text-decoration: none;
+}
